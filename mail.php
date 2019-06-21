@@ -23,9 +23,9 @@
 
     if (@mail($to, $email, $message, $headers))
     {
-        echo 'Your message has been sent.';
+        echo '<script>alert("Enviado.")</script> ';
     }else{
-        echo 'failed';
+        echo '<script>alert("No posees el puntaje requerido para esta sección.")</script> ';
     }
 
 ?>
