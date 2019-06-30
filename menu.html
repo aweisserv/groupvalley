@@ -29,7 +29,46 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">				
 			<link rel="stylesheet" href="css/main.css">
-		</head>
+
+		<!-- Ancla suave -->
+		<script type="text/javascript" src="JQuery/jquery.js"></script>
+		<script> 
+			$(document).ready(function() {
+			  $('a[href^="#"]').click(function() {
+			    var destino = $(this.hash);
+			    if (destino.length == 0) {
+			      destino = $('a[name="' + this.hash.substr(1) + '"]');
+			    }
+			    if (destino.length == 0) {
+			      destino = $('html');
+			    }
+			    $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+			    return false;
+			  });
+			})
+		</script>
+
+		<style>
+		body{ margin: 0px; text-align: left; }
+		header{margin: 0px; text-align: center; }
+		#pagetop{
+			position: fixed;
+			top: 0px;
+			width:100%;
+			height: 120px;
+			background: #111111;
+			color: #FFF;
+			font-size: 18px;
+			padding-top: 50px;
+			transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+			overflow:hidden;
+			text-align: left;
+		}
+
+		#wrapper{ margin-top: 160px; }
+		</style> 
+		<!-- fin ancla-->	
+	</head>
 		<body>	
 			<header id="header">
 				<div class="header-top">
@@ -87,13 +126,11 @@
 						<div class="title text-center">
 								<h1 class="mb-10">Cítricos</h1><br>
 								<div class="row">
-
-
 									<div class="col-lg-4 single-blog">
 										<div class="thumb">
 											<img class="img-fluid" src="img/mandarina.jpg" alt="">								
 										</div>
-										<a href="blog-single.html"><h4><br>Mandarina</h4><br></a>
+										<a href="#Anchor"><h4><br>Mandarina</h4><br></a>
 										<p ALIGN="justify">
 											La mandarina es un fruto similar a la naranja pero más pequeña y achatada por su base. Su corteza es lisa, 
 											brillante color rojo anaranjado y es muy fácil de pelar, incluso con las manos. La mandarina se consume 
@@ -106,7 +143,7 @@
 													<li class="menu-has-children"><a href="">Disponibilidad y detalles de envío</a>
 														<ul>
 														  
-														  <img class="img-fluid" src="img/Productos/detallenaranja.png" >	
+														  pronto	
 														  <li><a href="contact.html">Consultar sobre disponibilidad de este producto</a></li>
 														</ul>
 													</li>
@@ -120,7 +157,7 @@
 										<div class="thumb">
 												<img class="img-fluid" src="img/navel.jpg" alt="">								
 										</div>
-											<a href="blog-single.html"><h4><br>Naranja<br>Navel</h4></a>
+											<a href="#Anchor"><h4><br>Naranja<br>Navel</h4></a>
 											<p ALIGN="justify">
 													Las naranjas Navel, o naranjas navelinas,  son grandiosas para el desayuno, 
 													como merienda o postre, en mermeladas, extraordinario complemento de las 
@@ -132,7 +169,7 @@
 													<li class="menu-has-children"><a href="">Disponibilidad y detalles de envío</a>
 														<ul>
 														  
-														  <img class="img-fluid" src="img/Productos/detallenaranja.png" >	
+														  <img class="img-fluid" src="img/Productos/dispnaranjas.png" >	
 														  <li><a href="contact.html">Consultar sobre disponibilidad de este producto</a></li>
 														</ul>
 													</li>
@@ -145,7 +182,7 @@
 										<div class="thumb">
 													<img class="img-fluid" src="img/fukumoto.jpg" alt="">								
 										 </div>
-											<a href="blog-single.html"><h4><br>Naranja<br>Fukumoto</h4></a>
+											<a href="#Anchor"><h4><br>Naranja<br>Fukumoto</h4></a>
 											<p ALIGN="justify">
 													La naranja fukumoto iene varias características excepcionales sobre los que destaca su 
 													atractiva forma redonda y el color rojizo-anaranjado igual, la forma del fruto es redonda, 
@@ -157,7 +194,7 @@
 														<li class="menu-has-children"><a href="">Disponibilidad y detalles de envío</a>
 															<ul>
 															  
-															  <img class="img-fluid" src="img/Productos/detallenaranja.png" >	
+															  <img class="img-fluid" src="img/Productos/dispnaranjas.png" >	
 															  <li><a href="contact.html">Consultar sobre disponibilidad de este producto</a></li>
 															</ul>
 														</li>
@@ -182,7 +219,7 @@
 									<div class="thumb">
 										<img class="img-fluid" src="img/limongenov.jpg" alt="">								
 									</div>
-									<a href="blog-single.html"><h4><br>Variedad<br>Genova</h4></a>
+									<a href="#Anchor"><h4><br>Variedad<br>Genova</h4></a>
 									<p ALIGN="justify">
 										Esta variedad es de un color amarillo típico, tiene forma ovalada u oblonga, con un cuello mas o menos pronunciado 
 										y su superficie es ligeramente rugosa aunque se recuperan mejor. Se caracteriza por sus frutos de buen calibre, pocas semillas 
@@ -206,7 +243,7 @@
 									<div class="thumb">
 											<img class="img-fluid" src="img/eureka.jpg" alt="">								
 									</div>
-										<a href="blog-single.html"><h4><br>Variedad<br>Eureka</h4></a>
+										<a href="#Anchor"><h4><br>Variedad<br>Eureka</h4></a>
 										<p ALIGN="justify">
 											El fruto es elíptico a oblongo, un collar bajo relieve en la base, de piel amarilla, con crestas longitudinales, 
 											ligeramente áspera a causa de las hundidas glándulas de aceite, medianamente gruesa, 
@@ -233,7 +270,7 @@
 									<div class="thumb">
 												<img class="img-fluid" src="img/messina.jpg" alt="">								
 									 </div>
-										<a href="blog-single.html"><h4><br>Variedad<br>Mesina</h4></a>
+										<a href="#Anchor"><h4><br>Variedad<br>Mesina</h4></a>
 										<p ALIGN="justify">
 											Esta variedad que aterrizó en Chile a inicios del 2000 y que destaca por su cosecha 
 											concentrada entre febrero y mayo, y que termina en junio con exportaciones tempranas.
@@ -259,7 +296,7 @@
 									<div class="thumb">
 											<img class="img-fluid" src="img/Limon49.jpg" alt="">								
 									</div>
-										<a href="blog-single.html"><h4><br>Variedad<br>Fino 49</h4></a>
+										<a href="#Anchor"><h4><br>Variedad<br>Fino 49</h4></a>
 										<p ALIGN="justify">
 											El fruto de Fino 49 es de muy buena calidad y muy uniforme. El fruto es ovalado, 
 											simétrico, con pezón corto y prácticamente sin cuello y su corteza es lisa y 
@@ -299,7 +336,7 @@
 							<div class="thumb">
 								<img class="img-fluid" src="img/crimsonseed.jpg" alt="">								
 							</div>
-							<a href="blog-single.html"><h4><br>Variedad<br>Crimson Seedless</h4></a>
+							<a href="#Anchor"><h4><br>Variedad<br>Crimson Seedless</h4></a>
 								<p ALIGN="justify">
 										La Crimson Seedless es una uva roja con bayas firmes y quebradizas. De baya media-grande 
 										y forma eliptica alargada y racimo de tamaño medio de forma cónica y piel gruesa. Su pulpa 
@@ -324,7 +361,7 @@
 							<div class="thumb">
 								<img class="img-fluid" src="img/flameseedless.jpg" alt="">								
 							</div>
-							<a href="blog-single.html"><h4><br>Variedad<br>Flame Seedless</h4></a>
+							<a href="#Anchor"><h4><br>Variedad<br>Flame Seedless</h4></a>
 								<p ALIGN="justify">
 									Variedad de uva de mesa vigorosa y de gran peso que se mantiene bien almacenada. 
 									Es un híbrido de los cultivares Thompson Seedless, Cardinal y varios otros Vitis 
@@ -348,7 +385,7 @@
 							<div class="thumb">
 								<img class="img-fluid" src="img/queenrose.jpg" alt="">								
 							</div>
-							<a href="blog-single.html"><h4><br>Variedad<br>Queen Rose</h4></a>
+							<a href="#Anchor"><h4><br>Variedad<br>Queen Rose</h4></a>
 								<p ALIGN="justify">
 										Variedad con bayas medianas a grandes, cilíndricas, sin pepas y sus 
 										racimos son muy atractivos. Su sabor es dulce 
@@ -374,7 +411,7 @@
 							<div class="thumb">
 								<img class="img-fluid" src="img/redglove.jpg" alt="">								
 							</div>
-							<a href="blog-single.html"><h4><br>Variedad<br>Red Glove</h4></a>
+							<a href="#Anchor"><h4><br>Variedad<br>Red Glove</h4></a>
 								<p ALIGN="justify">
 									
 									Como su nombre indica Red Globe (Globo Rojo) 
@@ -410,7 +447,7 @@
 									<div class="thumb">
 									<img class="img-fluid" src="img/sugraone.jpg" alt="">								
 									</div>
-									<a href="blog-single.html"><h4><br>Variedad<br>Sugraone Seedless</h4></a>
+									<a href="#Anchor"><h4><br>Variedad<br>Sugraone Seedless</h4></a>
 									<p ALIGN="justify">
 											 Variedad de sabor neutro, ligeramente aromático;
 											 La baya presenta un color de verde claro a verde 
@@ -436,7 +473,7 @@
 								<div class="thumb">
 									<img class="img-fluid" src="img/thompson.jpg" alt="">								
 								</div>
-								<a href="blog-single.html"><h4><br>Variedad<br>Thompson Seedless</h4></a>
+								<a href="#Anchor"><h4><br>Variedad<br>Thompson Seedless</h4></a>
 									<p ALIGN="justify">
 										Variedad con bayas medianas a grandes, cilíndricas, de color verde 
 										claro, sin pepas y sus racimos son muy atractivos. Las Thompson Seedless 
@@ -461,7 +498,7 @@
 								<div class="thumb">
 									<img class="img-fluid" src="img/autummroyal.jpg" alt="">								
 								</div>
-								<a href="blog-single.html"><h4><br>Variedad<br>Auntumn Royal</h4></a>
+								<a href="#Anchor"><h4><br>Variedad<br>Auntumn Royal</h4></a>
 									<p ALIGN="justify">
 											
 										El racimo de la Autumn Royal es de tamaño grande a muy grande, cónico piramidal y
@@ -496,7 +533,7 @@
 												<div class="thumb">
 														<img class="img-fluid" src="img/hass1.jpg" alt="">								
 													</div>
-													<a href="blog-single.html"><h4><br>Palta (Avocado)<br>Hass</h4></a>
+													<a href="#Anchor"><h4><br>Palta (Avocado)<br>Hass</h4></a>
 													<p ALIGN="justify">
 														Esta variedad de palta es de un color amarillo típico, tiene forma ovalada u oblonga, con un cuello mas o menos pronunciado 
 														y su superficie es ligeramente rugosa aunque se recuperan mejor.<br>
@@ -530,7 +567,7 @@
 											<div class="thumb">
 													<img class="img-fluid" src="img/ajo.jpg" alt="">								
 											</div>
-												<a href="blog-single.html"><h4><br>Ajo Blanco</h4></a>
+												<a href="#Anchor"><h4><br>Ajo Blanco</h4></a>
 												<p ALIGN="justify"><br>
 														El ajo es una planta de la misma familia que la cebolla, los puerros y las chalotas. 
 														Es cultivado en amplias zonas del mundo y muy utilizado en la cocinaSu potente sabor y olor le caracteriza.
@@ -557,7 +594,7 @@
 											<div class="thumb">
 														<img class="img-fluid" src="img/cebolla.jpg" alt="">								
 											</div>
-												<a href="blog-single.html"><h4><br>Cebolla Grano de Oro</h4></a>
+												<a href="#Anchor"><h4><br>Cebolla Grano de Oro</h4></a>
 												<p ALIGN="justify"><br>
 													La cebolla Grano de Oro o valenciana es una variedad dulce de buena conservación 
 													que destaca por su color amarillo con tono cobre en su exterior. 
@@ -586,6 +623,8 @@
 				</div><hr>	
 			</section>
 			<!-- End blog Area -->
+			<!--Anlca a contenidos -->
+			<a name="Anchor"></a>
 			<center><h1 class="mb-10">Calendario de disponibilidad</h1><br>
 			<div class="col-lg-8 ">
 				<div class="thumb">
